@@ -41,4 +41,4 @@ def reports_section():
         st.markdown("""
 ### Dive into how we use LLMs to generate reports from patient history to better understand patients needs before his next appointments!
 """)
-        st.page_link("pages/2_📊_reports.py", label="Explore reports", icon="🔗", use_container_width=True)
+        st.page_link("pages/2_📊_Reports.py", label="Explore reports", icon="🔗", use_container_width=True)
