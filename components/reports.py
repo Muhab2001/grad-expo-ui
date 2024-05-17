@@ -57,7 +57,7 @@ def report_details():
             st.metric(f"Sentiment {'🟢' if st.session_state.sentiment_score >= 0.5 else '🔴'}", value=st.session_state.sentiment_score)
         
         with col2:
-            st.metric("Messages 📧", value=st.session_state.messages_covered)
+            st.metric("Messages 📧", value=f"{int(st.session_state.messages_covered)}")
 
         with col3:
             with st.popover("Mental Disorder Report", use_container_width=True):
