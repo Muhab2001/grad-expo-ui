@@ -29,7 +29,7 @@ def view_report(state: ReportPageState, id: int):
     state.update_current_report(pk, text_report, mental_disorders, stats)
 
 
-@st.experimental_fragment(run_every=60)
+@st.experimental_fragment(
 def reports_list(state: ReportPageState):
     
     reports = list_sentiment_reports()
